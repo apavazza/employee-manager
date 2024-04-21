@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Manager - Settings</title>
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/output.css">
+    <script defer src="../scripts/exportData.js"></script>
+    <script defer src="../scripts/importData.js"></script>
+    <script defer src="../scripts/deleteData.js"></script>
+</head>
+<body class="flex flex-col justify-between min-h-screen">
+    <nav id="nav">
+        <a href="../index.html"><h1>Employee Manager</h1></a>
+        <a href="../pages/manage-employees.html">Employees</a>
+        <a href="../pages/pto-manager.html">Paid Time Off</a>
+        <a href="../pages/settings.html">Settings</a>
+    </nav>
+    <main class="mx-auto my-3 flex justify-center flex-wrap text-center min-w-80 w-1/2 bg-neutral-300 rounded-md">
+            <p class="text-center w-full">Settings</p>
+            <button id="export-employee-data" class="border border-black p-3 m-3 w-72 h-14 bg-neutral-400 hover:bg-neutral-500 active:bg-neutral-600 rounded-md">Export Employee Data</button>
+            <button id="export-pto-data" class="border border-black p-3 m-3 w-72 h-14 bg-neutral-400 hover:bg-neutral-500 active:bg-neutral-600 rounded-md">Export PTO Data</button>
+            <div class="m-1 border border-solid border-black rounded-md w-96">
+                <label for="" >Import Employee Data</label>
+                <input id="file-input-employee" class="bg-neutral-400 rounded" type="file">
+                <button id="import-employee-data" class="border border-black p-3 m-3 w-52 h-14 neutral-400 bg-neutral-400 hover:bg-neutral-500 active:bg-neutral-600 rounded-md">Import Employee Data</button>
+            </div>
+            <div class="m-1 border border-solid border-black rounded-md w-96">
+                <label for="" >Import PTO Data</label>
+                <input id="file-input-pto" class="bg-neutral-400 rounded" type="file">
+                <button id="import-pto-data" class="border border-black p-3 m-3 w-52 h-14 neutral-400 bg-neutral-400 hover:bg-neutral-500 active:bg-neutral-600 rounded-md">Import PTO Data</button>
+            </div>
+            <button id="delete-data" class="border border-black p-3 m-3 w-72 h-14 bg-red-400 hover:bg-red-500 active:bg-red-600 rounded-md">Delete All Data</button>
+    </main>
+    <footer>
+        <div class="text-center bg-gray-700 text-white p-3 w-screen"><span class="text-gray-300">Made by </span><a href="https://apavazza.github.io/" target="_blank" class="text-gray-100">Amadeo Pavazza</a></div>
+    </footer>
+</body>
+</html>

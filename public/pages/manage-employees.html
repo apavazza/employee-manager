@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Manager - Employees</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/output.css">
+    <script defer type="module" src="../scripts/addEmployee.js"></script>
+    <script defer src="../scripts/employeeList.js"></script>
+</head>
+<body class="flex flex-col justify-between items-center min-h-screen">
+    <nav id="nav">
+        <a href="../index.html"><h1>Employee Manager</h1></a>
+        <a href="../pages/manage-employees.html">Employees</a>
+        <a href="../pages/pto-manager.html">Paid Time Off</a>
+        <a href="../pages/settings.html">Settings</a>
+    </nav>
+    <main class="w-screen flex justify-center flex-wrap">
+        <div class="mt-10 w-72 h-96 p-3 bg-neutral-300 rounded-md">
+            <h2 class="text-center">Add Employee</h2>
+            <div id="status" class="w-full p-1 text-center rounded-md hidden"></div>
+            <form method="POST" id="add-employee">
+                <div class="p-2">
+                    <label for="first-name">First Name</label>
+                    <input class="w-full p-1" type="text" name="first-name">
+                </div>
+               <div class="p-2">
+                    <label for="last-name">Last Name</label>
+                    <input class="w-full p-1" type="text" name="last-name">
+               </div>
+                <div class="p-2">
+                    <label for="date-of-birth">Date of Birth</label>
+                <input class="w-full p-1" type="date" name="date-of-birth">
+                </div>
+                <div class="p-2">
+                    <label for="job-description">Job Description</label>
+                    <input class="w-full p-1" type="text" name="job-description">
+                </div>
+                <button class="float-end border p-1 border-black rounded-md bg-neutral-400 hover:bg-neutral-500 active:bg-neutral-600" type="submit">Add</button>
+            </form>
+        </div>
+        <div id="list-employees" class="w-[70%] m-10 p-3 rounded-md bg-neutral-300">
+            <h2>Employee list</h2>
+        </div>
+    </main>
+    <footer>
+        <div class="text-center bg-gray-700 text-white p-3 w-screen"><span class="text-gray-300">Made by </span><a href="https://apavazza.github.io/" target="_blank" class="text-gray-100">Amadeo Pavazza</a></div>
+    </footer>
+</body>
+</html>

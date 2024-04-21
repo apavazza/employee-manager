@@ -1,0 +1,45 @@
+{
+    "appId": "io.github.apavazza.employee-manager",
+    "productName": "Employee Manager",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/main.js",
+      "public/**/*"
+    ],
+    "asar": true,
+    "mac": {
+      "category": "",
+      "target": [
+        "dmg"
+      ],
+      "icon": "public/images/icon.png"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "msi"
+      ],
+      "icon": "public/images/icon.png"
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "rpm"
+      ],
+      "icon": "public/images/icon.png"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "apavazza",
+        "repo": "employee-manager",
+        "releaseType": "draft"
+      }
+    ],
+    "extraMetadata": {
+      "version": "1.0.0"
+    }
+  }
+  

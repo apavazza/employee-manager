@@ -1,0 +1,5 @@
+spring.jpg: Photo by Bob Krustev from Pexels: https://www.pexels.com/photo/green-mountain-surrounded-by-body-of-water-photo-225203/
+summer.jpg: Photo by Mikhail Nilov: https://www.pexels.com/photo/aerial-view-of-boats-on-the-sea-near-the-shore-8323137/
+autumn.jpg: Photo by Pixabay from Pexels: https://www.pexels.com/photo/crepuscular-lights-passing-through-trees-531857/
+winter.jpg: Photo by PhotoMIX Company from Pexels: https://www.pexels.com/photo/green-pine-trees-94842/
+icon.png: https://uxwing.com/id-card-line-icon/

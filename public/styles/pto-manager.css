@@ -1,0 +1,116 @@
+#guest-notice{
+    margin: 0 auto;
+    width: 70%;
+    background-color: lightgray;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    padding: 200px 0;
+    margin-top: 20px;
+}
+
+#pto-interface{
+    display: block;
+    width: 800px;
+    margin: 30px auto 0 auto;
+}
+
+#pto-input{
+    border-color: black;
+    border: solid 1px gray;
+    padding: 30px;
+    margin-bottom: 30px;
+	border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#pto-input form{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#pto-input select{
+    background-color: lightgray;
+    border: 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.date-container label{
+    display: block;
+    text-align: center;
+}
+
+#pto-input button{
+    background-color: lightgray;
+    padding: 5px 10px;
+    margin: 5px;
+    color: black;
+    border: 0;
+    border-radius: 5px;
+}
+
+.employee-card{
+    display: block;
+    border-color: black;
+    border: solid 1px gray;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.employee-card label{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+.pto-group{
+    display: none;
+}
+
+.pto-element{
+    position: relative;
+    margin: 15px 0;
+    padding: 30px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.pto-element label{
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px; /* width of the outer border */
+    -webkit-text-stroke-color: black; /* color of the outer border */
+}
+
+.x-icon {
+	position: absolute;
+    color: red;
+	top: -12px;
+	right: -9px;
+    font-size: large;
+}
+
+.x-icon:hover {
+	color: darkred;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+    #pto-interface{
+        width: 95%;
+    }
+
+    #pto-input form{
+        flex-direction: column;
+    }
+}

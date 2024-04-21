@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Manager - Paid Time Off</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../styles/nav.css">
+    <link rel="stylesheet" href="../styles/pto-manager.css">
+    <link rel="stylesheet" href="../styles/calendar.css">
+    <link rel="stylesheet" href="../styles/output.css">
+    <script defer type="module" src="../scripts/ptoManager.js"></script>
+    <script defer type="module" src="../scripts/calendar.js"></script>
+</head>
+<body class="flex flex-col justify-between min-h-screen">
+    <nav id="nav">
+        <a href="../index.html"><h1>Employee Manager</h1></a>
+        <a href="../pages/manage-employees.html">Employees</a>
+        <a href="../pages/pto-manager.html">Paid Time Off</a>
+        <a href="../pages/settings.html">Settings</a>
+    </nav>
+    <main>
+        <div id="pto-interface">
+            <div id="pto-input">
+                <form id="add-pto-form" method="POST">
+                    <select name="employee-id" id="employee-id">
+                        <option value="">Select Employee</option>
+                    </select>
+                    <div class="date-container">
+                        <input class="date-input" id="start-date-input" name="start-date-input" type="hidden">
+                        <label>Start Date</label>
+                        <div class="calendar" id="custom-calendar-start-date"></div>
+                    </div>
+                    <div class="date-container">
+                        <input class="date-input" id="end-date-input" name="end-date-input" type="hidden">
+                        <label>End Date</label>
+                        <div class="calendar" id="custom-calendar-end-date"></div>
+                    </div>
+                    <button id="add-pto" type="submit">Add PTO</button>
+                </form>
+            </div>
+            <div id="employee-pto-container"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="text-center bg-gray-700 text-white p-3 w-auto"><span class="text-gray-300">Made by </span><a href="https://apavazza.github.io/" target="_blank" class="text-gray-100">Amadeo Pavazza</a></div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    font-family: Calibri, sans-serif;
+}
+
+#nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: slategray;
+    width: 100%;
+    padding: 10px;
+}
+
+#nav h1{
+    color: white;
+    display: inline;
+    font-size: larger;
+}
+
+#nav a{
+    text-decoration: none;
+    color: white;
+}
+
+#title{
+    color: white;
+    padding: 10px;
+}
