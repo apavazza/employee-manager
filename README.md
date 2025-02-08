@@ -1,3 +1,7 @@
+# Employee Manager
+
+An electron application for managing employees
+
 ## Compiling
 
 To build the application run:
